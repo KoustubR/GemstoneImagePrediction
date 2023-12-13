@@ -20,4 +20,4 @@ test (~8 MB): This file contains 87 subfolders and ~400 files in total. Each sub
 Acknowledgements
 Most pictures were taken from minerals.net and www.rasavgems.com websites. I do not own the images! I just collected them in one dataset. 😊 You can find this work on my GitHub page: create a dataset and split it into test and training folders.
 
-Authors: Koustub Raghavendra and Keerthi Rajendran
+Authors: Koustub Raghavendra
