@@ -17,4 +17,4 @@ This dataset is composed of two folders:
 train (~56 MB): This file contains 87 subfolders and ~2,800 files in total. Each subfolder contains jpeg images of different gemstones.
 test (~8 MB): This file contains 87 subfolders and ~400 files in total. Each subfolder contains jpeg images of different gemstones.
 
-Authors: Koustub Raghavendra
+Author: Koustub Raghavendra
