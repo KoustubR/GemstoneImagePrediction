@@ -1,8 +1,8 @@
 # GemstoneImagePrediction
 
-This repository contains all the files and folders used in model training and the UI code for Gemstone Image Prediction:
+This repository contains all the scripts and UI code for Gemstone Image Prediction:
 
-Problem Statement: https://www.kaggle.com/datasets/lsind18/gemstones-images/data 
+Problem Statement and dataset: https://www.kaggle.com/datasets/lsind18/gemstones-images/data 
 
 About Dataset
 Context
