@@ -1,4 +1,3 @@
-Sys.setenv(RETICULATE_PYTHON = 'C:/Users/koust_fiminqv/AppData/Local/Programs/Python/Python311')
 library(dplyr)
 install.packages("caret")
 library(caret)
@@ -13,8 +12,8 @@ library(tidyverse)
 
 ################################# Preprocessing ###################################
 
-TRAINING_DIR <- "C:/Users/koust_fiminqv/Desktop/R_project/R_project/train"
-TEST_DIR <- "C:/Users/koust_fiminqv/Desktop/R_project/R_project/test"
+#TRAINING_DIR <- Enter your Training Directory      
+#TEST_DIR <- Enter your Test Directory
 
 set.seed(123)
 train_preprocess <- function(train_dir, trsplit) {
@@ -184,7 +183,7 @@ img_augmentation <- function(train_df, max_samples, column, AUG_DIR, image_size)
 }
 
 
-AUG_DIR <- "C:/Users/koust_fiminqv/Desktop/R_project/R_project/aug"
+#AUG_DIR <- Enter a path to store augmented paths
 max_samples <- 150
 channels <- 3
 img_size <- c(224, 224)
@@ -284,7 +283,7 @@ model %>% evaluate(test_gen, length(test_gen))
 
 ################################ Saving the model and class names for UI ################
 
-save_model_tf(model, "C:/Users/koust_fiminqv/Desktop/R_project/R_project/Model")
+save_model_tf(model, "KoustubR/GemstoneImagePrediction/Model")
 saveRDS(class_names, "classname.rds")
 
 
