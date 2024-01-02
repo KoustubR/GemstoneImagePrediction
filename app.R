@@ -1,12 +1,11 @@
-Sys.setenv(RETICULATE_PYTHON = 'C:/Users/koust_fiminqv/AppData/Local/Programs/Python/Python311')
 library(shiny)
 library(shinythemes)
 library(keras)
 
 # Importing the model for prediction
-model <- load_model_tf("C:/Users/koust_fiminqv/Desktop/R_project/R_project/Model")
+model <- load_model_tf("KoustubR/GemstoneImagePrediction/Model")
 class_name <- readRDS('classname.rds')
-defaultpath <- 'C:/Users/koust_fiminqv/Desktop/R_project/R_project/dataset-cover.jpg'
+defaultpath <- 'KoustubR/GemstoneImagePrediction/dataset-cover.jpg'
 
 
 ############################## UI for Upload ########################################
@@ -31,7 +30,7 @@ ui <- fluidPage(theme = shinytheme("united"),
 
 server <- function(input, output, session) {
   imageInput <- reactive({
-    output_folder <- "C:/Users/koust_fiminqv/Desktop/R_project/R_project/server_uploads"
+    output_folder <- "KoustubR/GemstoneImagePrediction/server_uploads"
     filename <- input$myFile$name
     save_path <- file.path(output_folder, filename)
     file.copy(input$myFile$datapath, save_path, overwrite = TRUE)
